@@ -27,7 +27,7 @@ function store(event) {
     input = event.target.value
     // inn = input.toLowerCase()
 }
-countries = ["Mexico", "Guatemala", "Cuba", "Dominican Republic", "Honduras", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico"]
+countries = ["Mexico", "Guatemala", "Cuba", "Dominican Republic", "Honduras", "Nicaragua", "El Salvador", "Costa Rica", "Puerto Rico"]
 
 enter.addEventListener("click", check)
 

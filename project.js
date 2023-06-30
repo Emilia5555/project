@@ -34,53 +34,53 @@ countries = ["Mexico", "Guatemala", "Cuba", "Dominican Republic", "Honduras", "N
 enter.addEventListener("click", check)
 
 function check() {
-
-
-document.getElementById('input').value = ''
+    document.getElementById('input').value = ''
     for (let i = 0; i < countries.length; i++) {
         if (input == countries[i]) {
-            if(input == "Mexico"){
+            if (input == "Mexico") {
                 mexico.style.visibility = "visible"
-                count+=1
-                
-            }else if(input == "Guatemala"){
+                count += 1
+
+            } else if (input == "Guatemala") {
                 guatemala.style.visibility = "visible"
-                count+=1
-            }else if(input == "Cuba"){
+                count += 1
+            } else if (input == "Cuba") {
                 cuba.style.visibility = "visible"
-                count+=1
-            }else if(input == "Dominican Republic"){
+                count += 1
+            } else if (input == "Dominican Republic") {
                 dr.style.visibility = "visible"
-                count+=1
-            }else if(input == "Honduras"){
+                count += 1
+            } else if (input == "Honduras") {
                 honduras.style.visibility = "visible"
-                count+=1
-            }else if(input == "Nicaragua"){
+                count += 1
+            } else if (input == "Nicaragua") {
                 nicaragua.style.visibility = "visible"
-                count+=1
-            }else if(input == "El Salvador"){
+                count += 1
+            } else if (input == "El Salvador") {
                 elsalvadore.style.visibility = "visible"
-                count+=1
-            }else if(input == "Costa Rica"){
+                count += 1
+            } else if (input == "Costa Rica") {
                 costarica.style.visibility = "visible"
-                count+=1
-            }else if(input == "Puerto Rico"){
+                count += 1
+            } else if (input == "Puerto Rico") {
                 pr.style.visibility = "visible"
-                count+=1
+                count += 1
             }
-        if (count >= 9){
-    input = document.getElementById('input')
-    input.style.visibility = "hidden"
-    enter.style.visibility = "hidden"
-    title.style.fontSize = "90px"
-    title.style.fontWeight = "500"
-    title.innerHTML = "Good job!"
-}}}
-    
-    
-document.getElementById('input').value = ''
-input = ""
-counter.innerHTML = count + "/9"
+            if (count >= 9) {
+                input = document.getElementById('input')
+                input.style.visibility = "hidden"
+                enter.style.visibility = "hidden"
+                title.style.fontSize = "90px"
+                title.style.fontWeight = "500"
+                title.innerHTML = "Good job!"
+            }
+        }
+    }
+
+
+    document.getElementById('input').value = ''
+    input = ""
+    counter.innerHTML = count + "/9"
 
 }
 document.addEventListener("keyup", function(event) {

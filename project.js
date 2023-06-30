@@ -1,5 +1,7 @@
 let countries = ["Mexico", "Guatemala", "Cuba", "Dominican Republic", "Honduras", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico"]
 
+let title = document.querySelector("#name")
+
 let input = document.querySelector("#input")
 
 let enter = document.querySelector("#enter")
@@ -25,13 +27,16 @@ input.addEventListener("change", store)
 
 function store(event) {
     input = event.target.value
-    // inn = input.toLowerCase()
+    
 }
 countries = ["Mexico", "Guatemala", "Cuba", "Dominican Republic", "Honduras", "Nicaragua", "El Salvador", "Costa Rica", "Puerto Rico"]
 
 enter.addEventListener("click", check)
 
 function check() {
+
+
+document.getElementById('input').value = ''
     for (let i = 0; i < countries.length; i++) {
         if (input == countries[i]) {
             if(input == "Mexico"){
@@ -63,6 +68,28 @@ function check() {
                 pr.style.visibility = "visible"
                 count+=1
             }
-    }}
+        if (count >= 9){
+    input = document.getElementById('input')
+    input.style.visibility = "hidden"
+    enter.style.visibility = "hidden"
+    title.style.fontSize = "90px"
+    title.style.fontWeight = "500"
+    title.innerHTML = "Good job!"
+}}}
+    
+    
+document.getElementById('input').value = ''
+input = ""
 counter.innerHTML = count + "/9"
+
 }
+document.addEventListener("keyup", function(event) {
+    if (event.code === 'Enter') {
+        check()
+    }
+
+
+});
+
+
+

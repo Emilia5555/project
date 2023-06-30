@@ -29,8 +29,28 @@ body {
     justify-content: center;
 }
 
+#input{
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: rgb(53, 53, 53);
+    margin: 30px;
+    border-width: 0px;
+    padding: 5px;
+}
+
 #enter {
     margin: 10px;
+    background-color: #92e692;
+    border-radius: 19px;
+    border-width: 0;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    font-size: 25px;
 }
 
 #grid {
@@ -63,7 +83,7 @@ img{
         position: fixed;
         left: 0;
         top: 0;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #name {
@@ -76,5 +96,25 @@ img{
     #grid {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    #input{
+        width: 150px;
+        height: 15px;
+        font-size: 10px;
+        border-radius: 10px;
+        border-color: rgb(255, 255, 255);
+        margin-bottom: 30px;
+    }
+    #enter {
+        margin: 5px;
+        background-color: #92e692;
+        border-radius: 10px;
+        border-width: 0;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 600;
+        color: rgb(53, 53, 53);
+        font-size: 15px;
     }
 }
